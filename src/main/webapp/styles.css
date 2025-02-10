@@ -1,0 +1,83 @@
+
+body{
+	font-family:Arial,sans-serif;
+	margin:0;
+	padding:0;
+}
+header{
+	background-color:#4CAF50;
+	padding:15px;
+	text-align:center;
+}
+header nav ul{
+	list-style:none;
+	padding:0;
+}
+header nav ul li{
+	display: inline;
+	margin-right: 20px;
+}
+header nav ul li a{
+	color: white;
+	text-decoration:none;
+	font-size:18px;
+}
+footer{
+	background-color: #333;
+	color : white;
+	text-align:center;
+	padding: 10px;
+	position: fixed;
+	width: 100%;
+	bottom:0;
+	
+}
+main{
+	text-align:center;
+	margin-top: 50px;
+}
+.slider-container{
+	max-width: 100%;
+	position:relative;
+	margin:20px auto;
+}
+.slider{
+	display:none;
+	width: 100%;
+	height:400px;
+	object-fit:cover;
+}
+.slider-container img{
+	width:100%;
+	height:400px;
+	transition:opacity 1s ease-in-out;
+}
+.active{
+	display:block;
+}
+.prev, .next{
+	position:absolute;
+	top:50%;
+	transform: translateY(-50%);
+	background-color:rgba(0,0,0,0.5);
+	color:white;
+	font-size: 18px;
+	padding:10px;
+	cursor: pointer;
+	border:none;
+}
+.prev{
+	left:10px;
+}
+.next{
+	right:10px;
+}
+
+.student-info-table {
+    border-collapse: seperate;
+    width: 100%;
+}
+.student-info-table th, .student-info-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;

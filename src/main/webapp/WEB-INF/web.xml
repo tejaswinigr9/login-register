@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+     
+     <display-name>Registration App</display-name>
+     
+     
+     
+     <servlet>
+     <servlet-name>RegisterServlet</servlet-name>
+     <servlet-class>loginregister.RegisterServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     <servlet-name>RegisterServlet</servlet-name>
+     <url-pattern>/rs</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     <servlet-name>LoginServlet</servlet-name>
+     <servlet-class>loginregister.LoginServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/ls</url-pattern> 
+    </servlet-mapping>
+     
+      <servlet>
+     <servlet-name>StudentInfoServlet</servlet-name>
+     <servlet-class>loginregister.StudentInfoServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+        <servlet-name>StudentInfoServlet</servlet-name>
+        <url-pattern>/StudentInfoServlet</url-pattern> 
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>UpdateDetails</servlet-name>
+        <servlet-class>loginregister.UpdateDetails</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>UpdateDetails</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+    <servlet-name>ReadStudentServlet</servlet-name>
+    <servlet-class>loginregister.ReadStudentServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ReadStudentServlet</servlet-name>
+    <url-pattern>/ReadStudentServlet</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>loginregister.DeleteServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/DeleteServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+</web-app>
+
+     
